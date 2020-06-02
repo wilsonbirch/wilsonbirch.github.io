@@ -23,10 +23,10 @@ function generatePassword(){
         if (numChar >= 8 && numChar <= 128) {
 
             alert("The following questions will determine which character types the password should include");
-            var upperChar = confirm("Should the password contain uppercase letters?");
-            var lowerChar = confirm("Should the password contain lowercase letters?");
-            var numericChar = confirm("Should the password include numeric characters? (0123456789)");
-            var specialChar = confirm("Should the password include special characters? (!#$%&'()*+./:;<=>?@{^_{|}~)");
+            var upperChar = confirm("Should the password contain uppercase letters? OK = Yes, Cancel = No");
+            var lowerChar = confirm("Should the password contain lowercase letters? OK = Yes, Cancel = No");
+            var numericChar = confirm("Should the password include numeric characters? OK = Yes, Cancel = No (0123456789)");
+            var specialChar = confirm("Should the password include special characters? OK = Yes, Cancel = No (!#$%&'()*+./:;<=>?@{^_{|}~)");
 
             if (upperChar && lowerChar && numericChar  && specialChar){
 
